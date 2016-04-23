@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<package name="default" namespace="/" extends="struts-default">
+
+<interceptors>
+<interceptor-stack name="myStack">
+<interceptor-ref name="modelDriven"/> 
+</interceptor-stack> 
+</interceptors>
+
+<action name="login">
+<result>login.jsp</result>
+</action>
+
+<action name="loginprocess" class="com.javatpoint.Login">
+<result name="SUCCESS"  >loginsuccess.jsp</result>
+<result name="ERROR" >loginerror.jsp</result>
+</action>
+
+</package>
+</struts>    
