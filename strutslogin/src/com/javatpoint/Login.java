@@ -12,7 +12,7 @@ public class Login extends ActionSupport implements SessionAware,ModelDriven<Emp
 
 SessionMap sessionmap;
 
-Employee emp;
+Employee emp = new Employee();
 
 @Override
 public void setSession(Map map) {
