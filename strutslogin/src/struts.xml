@@ -12,12 +12,12 @@
 </interceptors>
 
 <action name="login">
-<result>login.jsp</result>
+<result>/login.jsp</result>
 </action>
 
 <action name="loginprocess" class="com.javatpoint.Login">
-<result name="SUCCESS"  >loginsuccess.jsp</result>
-<result name="ERROR" >loginerror.jsp</result>
+<result name="SUCCESS">loginsuccess.jsp</result>
+<result name="ERROR">loginerror.jsp</result>
 </action>
 
 </package>
