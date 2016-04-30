@@ -18,7 +18,7 @@ Employee emp = new Employee();
 public void setSession(Map map) {
 	// TODO Auto-generated method stub
 	sessionmap=(SessionMap)map;
-	sessionmap.put("login","true");
+	sessionmap.put("user",emp);
 }
 
 @Override

@@ -1,4 +1,4 @@
 <%@ taglib prefix="s" uri="/struts-tags" %>
-<hr/>
-
-<br/>Welcome, <s:property value="username"/>
+<%@taglib prefix="emp" uri="EmpTag.tld"%>
+<%@page import="com.javatpoint.Employee"%>
+<emp:userName color="red" size="200%"/>
